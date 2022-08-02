@@ -15,7 +15,7 @@
 
 # uvicorn-gunicorn-fastapi
 
-[**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by [**Gunicorn**](https://gunicorn.org/) for high-performance [**FastAPI**](https://fastapi.tiangolo.com/) web applications in **[Python](https://www.python.org/) 3.8 and above** with performance auto-tuning. Optionally in a slim version or based on Alpine Linux.
+[**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by [**Gunicorn**](https://gunicorn.org/) for high-performance [**FastAPI**](https://fastapi.tiangolo.com/) web applications in **[Python](https://www.python.org/) 3.8 and above** with performance auto-tuning. Optionally in a slim version.
 
 **GitHub repo**: [https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker)
 
@@ -120,7 +120,7 @@ This image will set a sensible configuration based on the server it is running o
 
 It has sensible defaults, but you can configure it with environment variables or override the configuration files.
 
-There is also a slim version and another one based on Alpine Linux. If you want one of those, use one of the tags from above.
+There is also a slim version. If you want one of those, use one of the tags from above.
 
 ### `tiangolo/uvicorn-gunicorn`
 
