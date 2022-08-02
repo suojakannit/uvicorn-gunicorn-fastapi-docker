@@ -1,22 +1,13 @@
-[![Test](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/workflows/Test/badge.svg)](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/actions?query=workflow%3ATest) [![Deploy](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/workflows/Deploy/badge.svg)](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/actions?query=workflow%3ADeploy)
+[![Test](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/workflows/Test/badge.svg)](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/actions?query=workflow%3ATest) [![Deploy](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/workflows/Deploy/badge.svg)](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/actions?query=workflow%3ADeploy)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`python3.9`, `latest` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9.dockerfile)
-* [`python3.8`, _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.8.dockerfile)
-* [`python3.7`, _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.7.dockerfile)
-* [`python3.6` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.6.dockerfile)
-* [`python3.9-slim` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-slim.dockerfile)
-* [`python3.8-slim` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.8-slim.dockerfile)
-
-## Discouraged tags
-
-* [`python3.9-alpine3.14` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-alpine3.14.dockerfile)
-* [`python3.8-alpine3.10` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.8-alpine3.10.dockerfile)
-* [`python3.7-alpine3.8` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.7-alpine3.8.dockerfile)
-* [`python3.6-alpine3.8` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.6-alpine3.8.dockerfile)
-
-To learn more about why Alpine images are discouraged for Python read the note at the end: [🚨 Alpine Python Warning](#-alpine-python-warning).
+* [`python3.10`, `latest` _(Dockerfile)_](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.10.dockerfile)
+* [`python3.9`, _(Dockerfile)_](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9.dockerfile)
+* [`python3.8`, _(Dockerfile)_](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.8.dockerfile)
+* [`python3.10-slim` _(Dockerfile)_](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.10-slim.dockerfile)
+* [`python3.9-slim` _(Dockerfile)_](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-slim.dockerfile)
+* [`python3.8-slim` _(Dockerfile)_](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.8-slim.dockerfile)
 
 ---
 
@@ -24,9 +15,9 @@ To learn more about why Alpine images are discouraged for Python read the note a
 
 # uvicorn-gunicorn-fastapi
 
-[**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by [**Gunicorn**](https://gunicorn.org/) for high-performance [**FastAPI**](https://fastapi.tiangolo.com/) web applications in **[Python](https://www.python.org/) 3.6 and above** with performance auto-tuning. Optionally in a slim version or based on Alpine Linux.
+[**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by [**Gunicorn**](https://gunicorn.org/) for high-performance [**FastAPI**](https://fastapi.tiangolo.com/) web applications in **[Python](https://www.python.org/) 3.8 and above** with performance auto-tuning. Optionally in a slim version or based on Alpine Linux.
 
-**GitHub repo**: [https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker)
+**GitHub repo**: [https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker)
 
 **Docker Hub image**: [https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/](https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/)
 
@@ -108,7 +99,7 @@ That way, you get the best of concurrency and parallelism in simple deployments.
 
 ### FastAPI
 
-FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+.
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.8+.
 
 The key features are:
 
@@ -133,21 +124,13 @@ There is also a slim version and another one based on Alpine Linux. If you want 
 
 ### `tiangolo/uvicorn-gunicorn`
 
-This image (`tiangolo/uvicorn-gunicorn-fastapi`) is based on [**tiangolo/uvicorn-gunicorn**](https://github.com/tiangolo/uvicorn-gunicorn-docker).
+This image (`tiangolo/uvicorn-gunicorn-fastapi`) is based on [**tiangolo/uvicorn-gunicorn**](https://github.com/suojakannit/uvicorn-gunicorn-docker).
 
 That image is what actually does all the work.
 
 This image just installs FastAPI and has the documentation specifically targeted at FastAPI.
 
 If you feel confident about your knowledge of Uvicorn, Gunicorn and ASGI, you can use that image directly.
-
-### `tiangolo/uvicorn-gunicorn-starlette`
-
-There is a sibling Docker image: [**tiangolo/uvicorn-gunicorn-starlette**](https://github.com/tiangolo/uvicorn-gunicorn-starlette-docker)
-
-If you are creating a new [**Starlette**](https://www.starlette.io/) web application and you want to discard all the additional features from FastAPI you should use [**tiangolo/uvicorn-gunicorn-starlette**](https://github.com/tiangolo/uvicorn-gunicorn-starlette-docker) instead.
-
-**Note**: FastAPI is based on Starlette and adds several features on top of it. Useful for APIs and other cases: data validation, data conversion, documentation with OpenAPI, dependency injection, security/authentication and others.
 
 ## How to use
 
@@ -394,7 +377,7 @@ You can set it like:
 docker run -d -p 80:80 -e GUNICORN_CONF="/app/custom_gunicorn_conf.py" myimage
 ```
 
-You can use the [config file from the base image](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/gunicorn_conf.py) as a starting point for yours.
+You can use the [config file from the base image](https://github.com/suojakannit/uvicorn-gunicorn-docker/blob/master/docker-images/gunicorn_conf.py) as a starting point for yours.
 
 #### `WORKERS_PER_CORE`
 
@@ -736,24 +719,6 @@ But these environment variables will work the same as described above:
 * `HOST`
 * `PORT`
 * `LOG_LEVEL`
-
-## 🚨 Alpine Python Warning
-
-In short: You probably shouldn't use Alpine for Python projects, instead use the `slim` Docker image versions.
-
----
-
-Do you want more details? Continue reading 👇
-
-Alpine is more useful for other languages where you build a static binary in one Docker image stage (using multi-stage Docker building) and then copy it to a simple Alpine image, and then just execute that binary. For example, using Go.
-
-But for Python, as Alpine doesn't use the standard tooling used for building Python extensions, when installing packages, in many cases Python (`pip`) won't find a precompiled installable package (a "wheel") for Alpine. And after debugging lots of strange errors you will realize that you have to install a lot of extra tooling and build a lot of dependencies just to use some of these common Python packages. 😩
-
-This means that, although the original Alpine image might have been small, you end up with a an image with a size comparable to the size you would have gotten if you had just used a standard Python image (based on Debian), or in some cases even larger. 🤯
-
-And in all those cases, it will take much longer to build, consuming much more resources, building dependencies for longer, and also increasing its carbon footprint, as you are using more CPU time and energy for each build. 🌳
-
-If you want slim Python images, you should instead try and use the `slim` versions that are still based on Debian, but are smaller. 🤓
 
 ## Tests
 
