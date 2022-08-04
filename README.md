@@ -11,7 +11,7 @@
 
 ---
 
-**Note**: There are [tags for each build date](https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `tiangolo/uvicorn-gunicorn-fastapi:python3.7-2019-10-15`.
+**Note**: There are [tags for each build date](https://hub.docker.com/r/sanctflow/uvicorn-gunicorn-fastapi/tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `sanctflow/uvicorn-gunicorn-fastapi:python3.7-2019-10-15`.
 
 # uvicorn-gunicorn-fastapi
 
@@ -19,7 +19,7 @@
 
 **GitHub repo**: [https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker](https://github.com/suojakannit/uvicorn-gunicorn-fastapi-docker)
 
-**Docker Hub image**: [https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/](https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/)
+**Docker Hub image**: [https://hub.docker.com/r/sanctflow/uvicorn-gunicorn-fastapi/](https://hub.docker.com/r/sanctflow/uvicorn-gunicorn-fastapi/)
 
 ## Description
 
@@ -114,7 +114,7 @@ The key features are:
 
 <small>* estimation based on tests on an internal development team, building production applications.</small>
 
-### `tiangolo/uvicorn-gunicorn-fastapi`
+### `sanctflow/uvicorn-gunicorn-fastapi`
 
 This image will set a sensible configuration based on the server it is running on (the amount of CPU cores available) without making sacrifices.
 
@@ -122,9 +122,9 @@ It has sensible defaults, but you can configure it with environment variables or
 
 There is also a slim version. If you want one of those, use one of the tags from above.
 
-### `tiangolo/uvicorn-gunicorn`
+### `sanctflow/uvicorn-gunicorn`
 
-This image (`tiangolo/uvicorn-gunicorn-fastapi`) is based on [**tiangolo/uvicorn-gunicorn**](https://github.com/suojakannit/uvicorn-gunicorn-docker).
+This image (`sanctflow/uvicorn-gunicorn-fastapi`) is based on [**sanctflow/uvicorn-gunicorn**](https://github.com/suojakannit/uvicorn-gunicorn-docker).
 
 That image is what actually does all the work.
 
@@ -141,7 +141,7 @@ You can use this image as a base image for other images.
 Assuming you have a file `requirements.txt`, you could have a `Dockerfile` like this:
 
 ```Dockerfile
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
+FROM sanctflow/uvicorn-gunicorn-fastapi:python3.9
 
 COPY ./requirements.txt /app/requirements.txt
 
@@ -170,7 +170,7 @@ docker build -t myimage ./
 * Create a `Dockerfile` with:
 
 ```Dockerfile
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
+FROM sanctflow/uvicorn-gunicorn-fastapi:python3.9
 
 COPY ./requirements.txt /app/requirements.txt
 
@@ -277,7 +277,7 @@ COPY ./pyproject.toml ./poetry.lock* /tmp/
 
 RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
 
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
+FROM sanctflow/uvicorn-gunicorn-fastapi:python3.9
 
 COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 
